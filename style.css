@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background: url(images/bg.jpg);
+    height: max(800px, 30vh);
+    position: relative;
+    background-size: max(1550px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.main .box {
+    height: max(800px, 30vh);
+    width: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+.main nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main nav div :first-child {
+    background-color: transparent;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px 40px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.main nav div :last-child {
+    background-color: red;
+    font-size: 20px;
+    margin: 10px;
+    padding: 8px 20px;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.main nav span img {
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.main nav div {
+    position: relative;
+    z-index: 10;
+}
+
+.main .para {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 10;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main .para p1 {
+    font-size: 50px;
+    font-weight: 900;
+
+
+}
+
+.main .para p2 {
+    padding: 50px;
+    font-size: 30px;
+
+}
+
+.main .para p3 {
+    font-size: 25px;
+}
+
+.main .input {
+    display: flex;
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 126px;
+}
+
+.main .input input {
+    background-color: transparent;
+    color: white;
+    border: 1px solid gray;
+    padding: 2px 29px;
+    border-radius: 4px;
+    width: 430px;
+    height: 70px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.main .input .button button {
+    background-color: red;
+    color: white;
+    border: none;
+    width: 350px;
+    height: 80px;
+    border-radius: 4px;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+.main nav div :last-child:hover,
+.main .input .button button:hover {
+    background-color: rgb(187, 40, 40);
+}
+
+.tv {
+    background-color: black;
+    height: 880px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tv .p p1 {
+    color: white;
+    font-size: 60px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+
+}
+
+.tv .p p2 {
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.tv .secimg {
+    position: relative;
+    width: 555px;
+}
+
+.tv .secimg video {
+    top: 90px;
+    right: 80px;
+    position: absolute;
+    width: 400px;
+
+}
+
+.tv .secimg img {
+    position: relative;
+    z-index: 10;
+    width: 555px;
+}
+
+.seprate {
+    background-color: gray;
+    height: 11px;
+}
+
+.tv .strange {
+    position: relative;
+    margin: 0px 100px;
+    border: 2px solid rgb(160, 158, 158);
+    border-radius: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tv .strange .str {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.tv .strange .str:first-child {
+    width: 50px;
+}
+
+.tv .secimg2 {
+    position: relative;
+}
+
+.tv .secimg2 video {
+    top: 32px;
+    right: 108px;
+    position: absolute;
+    width: 347px;
+}
+
+.tv .secimg2 img {
+    position: relative;
+    z-index: 10;
+    width: 555px;
+}
+
+.arp {
+    background-color: black;
+    height: 1000px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.arp div {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.arp div svg {
+    color: white;
+}
+
+
+.arp div:nth-child(1) {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(0, 0, 0); */
+    font-size: 50px;
+    font-weight: 900;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.arp div:nth-child(2) {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    height: 40px;
+    width: 80vw;
+    background-color: rgb(50, 48, 48);
+    font-size: 25px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.arp div:nth-child(3) {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    height: 40px;
+    width: 80vw;
+    background-color: rgb(50, 48, 48);
+    font-size: 25px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.arp div:nth-child(4) {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    height: 40px;
+    width: 80vw;
+    background-color: rgb(50, 48, 48);
+    font-size: 25px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.arp div:nth-child(5) {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    height: 40px;
+    width: 80vw;
+    background-color: rgb(50, 48, 48);
+    font-size: 25px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.arp div:nth-child(6) {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    height: 40px;
+    width: 80vw;
+    background-color: rgb(50, 48, 48);
+    font-size: 25px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.arp div:nth-child(7) {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    height: 40px;
+    width: 80vw;
+    background-color: rgb(50, 48, 48);
+    font-size: 25px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.arp div:nth-child(8) {
+    margin-top: 50px;
+    color: white;
+    font-size: 23px;
+}
+
+.arp .input2 {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.arp .input2 div input {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    padding: 2px 32px;
+    border-radius: 4px;
+    width: 350px;
+    height: 50px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.arp .input2 .cap {
+    background-color: red;
+    padding: 7px 60px;
+    color: white;
+    width: 350px;
+    height: 42px;
+    border: none;
+    text-align: left;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+a {
+    color: white;
+}
+
+.a {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    font-size: 20px;
+    justify-content: center;
+    cursor: pointer;
+    gap: 50px;
+}
+
+.a .b {
+    text-align: center;
+    opacity: 0.6;
+}
+
+.a .c {
+    opacity: 0.6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.a .c .d {
+    display: flex;
+    flex-direction: column;
+}
+
+.a .c .e {
+    display: flex;
+    flex-direction: column;
+}
+
+.a .c .f {
+    display: flex;
+    flex-direction: column;
+}
+
+.a .c .g {
+    display: flex;
+    flex-direction: column;
+}
+
+.a .c .d button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.arp .input2 .cap:hover {
+    background-color: #c21b1b;
+}
+
+.arp div:nth-child(2):hover,
+.arp div:nth-child(3):hover,
+.arp div:nth-child(4):hover,
+.arp div:nth-child(5):hover,
+.arp div:nth-child(6):hover,
+.arp div:nth-child(7):hover {
+    background-color: #918b8b;
+}
+
+/* Enhance existing media query */
+@media screen and (max-width:900px) {
+    .main nav{
+        max-width: 96vw;
+    }
+
+    .main .para {
+        margin-top: 155px;
+    }
+    
+    .main .para p1 {
+        font-size: 35px;
+    }
+    
+    .main .para p2 {
+        padding: 30px;
+        font-size: 22px;
+    }
+    
+    .main .para p3 {
+        font-size: 18px;
+    }
+
+    .main .input {
+        flex-direction: column;
+    }
+
+    .main .input .div {
+        padding-bottom: 20px;
+    }
+    
+    .main .input input {
+        width: 80vw;
+        max-width: 430px;
+        height: 60px;
+        font-size: 20px;
+    }
+    
+    .main .input .button button {
+        width: 80vw;
+        max-width: 350px;
+        height: 60px;
+        font-size: 25px;
+    }
+
+    .tv {
+        height: auto;
+        padding: 30px 10px;
+        flex-direction: column;
+    }
+    
+    .tv .p {
+        text-align: center;
+        order: 1;
+    }
+    
+    .tv > div:not(.p) {
+        order: 2;
+    }
+
+    .tv .p p1 {
+        font-size: 35px;
+    }
+
+    .tv .p p2 {
+        font-size: 18px;
+    }
+    
+    .tv .secimg, .tv .secimg2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tv .secimg img, .tv .secimg2 img {
+        width: 90%;
+        max-width: 555px;
+    }
+    
+    .tv .secimg video {
+        top: 16%;
+        right: 15%;
+        width: 72%;
+    }
+    
+    .tv .secimg2 video {
+        top: 6%;
+        right: 19%;
+        width: 62%;
+    }
+    
+    .tv .image img {
+        width: 90%;
+        max-width: 490px;
+    }
+    
+    .tv .strange {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .arp div:nth-child(1) {
+        margin-bottom: 45px;
+        font-size: 30px;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .arp div:nth-child(2),
+    .arp div:nth-child(3),
+    .arp div:nth-child(4),
+    .arp div:nth-child(5),
+    .arp div:nth-child(6),
+    .arp div:nth-child(7) {
+        width: 90vw;
+        font-size: 18px;
+    }
+
+    .arp div:nth-child(8) {
+        margin-bottom: 45px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .arp .input2 {
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+    
+    .arp .input2 div input {
+        width: 80vw;
+        max-width: 350px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .arp .input2 .cap {
+        width: 80vw;
+        max-width: 350px;
+    }
+    
+    .a .c {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 20px;
+    }
+    
+    .a .c .g {
+        margin-right: 15px;
+    }
+    
+    .a .c .d {
+        margin-left: 15px;
+    }
+}
+
+/* Add new media query for mobile devices */
+@media screen and (max-width:600px) {
+    .main nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main nav span img {
+        margin-bottom: 20px;
+        width: 150px;
+    }
+    
+    .main nav div :first-child,
+    .main nav div :last-child {
+        font-size: 16px;
+        padding: 5px 20px;
+        margin: 5px;
+    }
+    
+    .main .para {
+        margin-top: 100px;
+    }
+    
+    .main .para p1 {
+        font-size: 28px;
+    }
+    
+    .main .para p2 {
+        padding: 20px;
+        font-size: 18px;
+    }
+    
+    .main .para p3 {
+        font-size: 16px;
+    }
+    
+    .tv .p p1 {
+        font-size: 28px;
+    }
+    
+    .tv .p p2 {
+        font-size: 16px;
+    }
+    
+    .arp div:nth-child(1) {
+        font-size: 24px;
+    }
+    
+    .a .c {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .a {
+        height: auto;
+        padding: 50px 0;
+    }
+}
+
+/* Add new media query for extra small devices */
+@media screen and (max-width:408px) {
+    .main .para p1 {
+        font-size: 24px;
+    }
+    
+    .main .para p2 {
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    .main .para p3 {
+        font-size: 14px;
+    }
+    
+    .main .input input {
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    .main .input .button button {
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .tv img {
+        width: 30px
+    }
+
+    .tv .img {
+        width: 190px;
+    }
+}
