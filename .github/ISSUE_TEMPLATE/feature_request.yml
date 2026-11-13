@@ -1,17 +1,32 @@
 name: Feature request
-description: Suggest a static UI, accessibility, or responsive improvement.
+description: Suggest a scoped static UI, accessibility, or maintenance improvement.
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
-  - type: textarea
-    id: rationale
+  - type: markdown
     attributes:
-      label: What problem should this solve?
+      value: |
+        Requests should fit the educational static-site scope. Real account, payment, streaming, or credential-collection features are out of scope.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What limitation or user need does this address?
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: Proposed improvement
+      label: Proposed change
+      description: Describe the behavior or visual improvement.
     validations:
       required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: impact
+    attributes:
+      label: Accessibility, responsive, and maintenance impact
+      description: Consider keyboard use, reduced motion, small screens, and asset rights.

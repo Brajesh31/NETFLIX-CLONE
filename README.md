@@ -1,6 +1,8 @@
-# Netflix Landing Page UI Recreation
+# Streaming Landing Page UI Recreation
 
-An educational front-end recreation of a Netflix-style streaming landing page, built with plain HTML and CSS. The page demonstrates a dark hero section, navigation, feature sections, FAQ-style rows, and responsive layout styling.
+An independent, static front-end learning project that recreates the visual structure of a subscription streaming landing page using **HTML5 and CSS3**. It is intended for practicing semantic markup, layout composition, typography, responsive styling, and local media handling.
+
+> **Unofficial educational project.** This repository is not affiliated with, endorsed by, or sponsored by Netflix. It does not provide streaming, membership, authentication, billing, account management, or access to any streaming service.
 
 <p align="center">
   <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white">
@@ -9,90 +11,115 @@ An educational front-end recreation of a Netflix-style streaming landing page, b
   <img alt="License" src="https://img.shields.io/badge/Source%20license-MIT-green.svg">
 </p>
 
-> This is an independent learning project. It is not affiliated with, endorsed by, or connected to Netflix. It does not provide streaming, account creation, subscriptions, or access to Netflix services.
+## Included page sections
+- Dark hero area with navigation and a prominent call-to-action.
+- Television, offline download, multi-device, and kids-profile feature sections.
+- Decorative local video elements layered with image assets.
+- Static FAQ-style rows and footer navigation.
+- Responsive CSS breakpoints for desktop, tablet, and smaller screens.
 
-## Page sections
+## What is not included
 
-- Hero section with navigation and a visual email call-to-action.
-- Streaming-on-TV feature section.
-- Download/offline viewing feature section.
-- Watch-anywhere feature section.
-- Kids profile feature section.
-- FAQ-style content rows.
-- Footer navigation links.
-- Responsive CSS rules for narrower screens.
+The visible language selector, sign-in button, email fields, start buttons, FAQ rows, and download indicator are presentation-only. There is no JavaScript application, server, form handler, email delivery, user database, authentication, payment integration, content catalogue, or streaming service. Do not enter real credentials or personal information into the visual placeholders.
 
-## Built with
+## Technology
 
-- Semantic HTML structure
-- CSS Flexbox and Grid
-- Media queries
-- Local image and video assets
-
-There is no JavaScript application, backend, authentication, payment flow, or real email submission in the current repository. The visible buttons and email fields are presentation elements only.
+| Area | Implementation |
+|---|---|
+| Markup | HTML5 |
+| Styling | CSS3, Flexbox, Grid, media queries |
+| Media | Local images and MP4 video files |
+| Runtime | Modern web browser |
+| Build tooling | None required |
+| Automated checks | Python standard library and GitHub Actions |
 
 ## Run locally
 
-No package installation is required.
+No Node.js, package manager, build step, or dependency installation is required.
 
-### Option 1: Open the file
+### Open directly
+Open `index.html` in a modern browser. Some browser configurations restrict media behavior when a file is opened directly, so a local server is more reliable.
 
-Open `index.html` in a modern browser.
-
-### Option 2: Start a local static server
-
+### Python static server
 From the repository root:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit [http://localhost:8000](http://localhost:8000).
+Then visit [http://localhost:8000](http://localhost:8000). Stop the server with Ctrl+C.
 
-## Project structure
+## Repository structure
 
 ```text
 .
-├── index.html       # Page markup and metadata
-├── style.css        # Layout, visual styles, and responsive rules
-├── images/          # Local page imagery
-├── video/           # Local decorative video assets
-└── favicon.ico
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   ├── workflows/quality.yml
+│   └── PULL_REQUEST_TEMPLATE.md
+├── docs/
+│   ├── ACCESSIBILITY.md
+│   ├── ARCHITECTURE.md
+│   ├── ASSET-INVENTORY.md
+│   ├── DEPLOYMENT.md
+│   ├── DEVELOPMENT.md
+│   ├── LIMITATIONS.md
+│   ├── ROADMAP.md
+│   ├── TESTING.md
+│   └── TROUBLESHOOTING.md
+├── images/
+├── scripts/validate_site.py
+├── video/
+├── index.html
+├── style.css
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── SECURITY.md
+└── LICENSE
 ```
 
-## Page composition
+## Rendering model
 
 ```mermaid
 flowchart TD
-    A[index.html] --> B[Hero and navigation]
-    A --> C[Feature sections]
-    A --> D[FAQ presentation]
-    A --> E[Footer links]
-    B --> F[style.css]
-    C --> F
+    A[Browser opens index.html] --> B[HTML document parsed]
+    B --> C[style.css loaded]
+    B --> D[Local images loaded]
+    B --> E[Local videos loaded]
+    C --> F[Responsive browser layout]
     D --> F
     E --> F
-    F --> G[Responsive browser layout]
 ```
 
-## Accessibility and improvement opportunities
+## Quality checks
 
-The current markup is an early visual recreation. Before treating it as a polished public site, replace non-standard elements such as `p1`, `p2`, and `p3` with semantic HTML, add meaningful image alt text, review keyboard focus states, and verify contrast and small-screen behavior. Connect form controls only if a legitimate backend flow is implemented.
+Run the local validator:
 
-## SEO and brand use
+```bash
+python scripts/validate_site.py
+```
 
-The document metadata identifies this as an unofficial UI recreation. Search engines are instructed not to index the page, to avoid confusing this demo with the official streaming service. Do not present it as an official Netflix site or use it to collect account credentials.
+It checks required files and local resource references. It does not replace browser testing, HTML conformance validation, accessibility testing, or visual review. GitHub Actions runs this check on pushes and pull requests targeting `main`.
 
-Netflix names, logos, artwork, and video assets remain the property of their respective owners. The repository's MIT license applies to the original project source code only and does not grant rights to third-party brand assets.
+## Documentation
+- [Architecture](docs/ARCHITECTURE.md)
+- [Development](docs/DEVELOPMENT.md)
+- [Asset inventory](docs/ASSET-INVENTORY.md)
+- [Accessibility](docs/ACCESSIBILITY.md)
+- [Testing](docs/TESTING.md)
+- [Deployment](docs/DEPLOYMENT.md)
+- [Known limitations](docs/LIMITATIONS.md)
+- [Troubleshooting](docs/TROUBLESHOOTING.md)
+- [Roadmap](docs/ROADMAP.md)
+- [Contributing](CONTRIBUTING.md)
+- [Support](SUPPORT.md)
+- [Security policy](SECURITY.md)
+- [Community standards](CODE_OF_CONDUCT.md)
 
-## Contributing
+## Brand and asset notice
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Keep contributions focused on the educational front-end implementation.
-
-## Security
-
-See [SECURITY.md](SECURITY.md). Do not add credential collection, deceptive sign-in flows, or tracking without clear user consent.
+Third-party names, logos, artwork, and media remain the property of their respective owners. The repository's MIT license applies to original project source code only. It does not grant rights to third-party marks or assets. Review asset ownership and permissions before redistribution or public deployment.
 
 ## License
 
-The original source code is provided under the MIT License. See [LICENSE](LICENSE). Third-party assets are not relicensed by that file.
+Original source code is provided under the MIT License. See [LICENSE](LICENSE). Third-party assets are not relicensed by that document.

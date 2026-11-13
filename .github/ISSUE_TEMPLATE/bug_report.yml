@@ -1,24 +1,58 @@
 name: Bug report
-description: Report a visual, layout, or accessibility issue.
+description: Report a reproducible layout, asset, browser, or accessibility issue.
 title: "[Bug]: "
 labels: ["bug"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        This repository is a static educational UI. Do not include passwords, personal data, or real streaming-service credentials.
   - type: textarea
     id: summary
     attributes:
-      label: What is wrong?
+      label: Problem summary
+      description: Describe the observed issue and the page section affected.
+      placeholder: The feature image overlaps the text at...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: List exact steps, including the page URL or local setup used.
     validations:
       required: true
   - type: input
     id: browser
     attributes:
       label: Browser and version
+      placeholder: e.g. Chrome 130
+    validations:
+      required: true
   - type: input
     id: viewport
     attributes:
-      label: Viewport size
-      placeholder: "e.g. 390 x 844"
-  - type: textarea
-    id: reproduce
+      label: Viewport dimensions
+      placeholder: e.g. 390 x 844
+  - type: dropdown
+    id: category
     attributes:
-      label: Steps to reproduce
+      label: Issue category
+      options:
+        - Layout or responsive behavior
+        - Missing image or video
+        - Accessibility or keyboard behavior
+        - Link or navigation
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot or console/network details
+      description: Remove private information before sharing.

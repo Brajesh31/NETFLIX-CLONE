@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/Brajesh31/NETFLIX-CLONE/security
+    about: Do not report sensitive security issues publicly. Use private reporting if enabled.
+  - name: Project documentation
+    url: https://github.com/Brajesh31/NETFLIX-CLONE/tree/main/docs
+    about: Read setup, testing, accessibility, and troubleshooting guidance before opening an issue.
