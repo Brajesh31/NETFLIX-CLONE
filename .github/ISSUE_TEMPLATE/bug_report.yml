@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a visual, layout, or accessibility issue.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What is wrong?
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+  - type: input
+    id: viewport
+    attributes:
+      label: Viewport size
+      placeholder: "e.g. 390 x 844"
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce

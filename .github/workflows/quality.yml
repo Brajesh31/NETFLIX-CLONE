@@ -1,0 +1,25 @@
+name: Static site checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify required page assets
+        run: |
+          test -s index.html
+          test -s style.css
+          test -s images/logo.png
+          test -s images/bg.jpg
+          test -s video/video1.mp4
+          test -s video/video2.mp4
